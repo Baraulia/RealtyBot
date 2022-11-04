@@ -1,3 +1,11 @@
 package cmd
 
-func main() {}
+import (
+	"github.com/Baraulia/RealtyBot/realtyParser"
+	"time"
+)
+
+func main() {
+	parser := realtyParser.NewParser()
+	ticker := time.NewTicker(5 * time.Minute)
+}
